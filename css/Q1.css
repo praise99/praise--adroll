@@ -1,0 +1,205 @@
+.heading-4 {
+  background-color: #ffffff;
+  padding: 4rem 15rem;
+  color: #000000;
+}
+.center {
+  text-align: center;
+}
+.head-box4 {
+  padding: 3rem 0rem;
+}
+.head-title4 {
+  font-size: 4rem;
+}
+.flex {
+  display: flex;
+  margin-top: 2.5rem;
+}
+.first {
+  width: 80%;
+  height: 1.5rem;
+  background-color: #e5e9f2;
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+.second {
+  width: 20%;
+  height: 1.5rem;
+  background-color: rgb(0, 174, 239);
+  border-radius: 1rem;
+}
+.shoot {
+  background-color: transparent;
+  border: 2px solid #000000;
+  margin-top: 3rem;
+}
+a {
+  margin-top: 3rem;
+}
+span {
+  font-size: 2rem;
+  padding-left: 1.5rem;
+}
+input {
+  font-size: 2rem;
+}
+.head-title7 {
+  font-size: 3.2rem;
+  margin-top: 2rem;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+.grid label {
+  width: 40rem;
+  padding: 2rem 6rem;
+  border: 0.5px solid #e5e9f2;
+}
+.grid label:hover {
+  border: 0.5px solid #8e44ad;
+  cursor: pointer;
+  color: #8e44ad;
+}
+.grid {
+  grid-gap: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 5rem;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio a */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio a */
+.checkmark {
+  position: absolute;
+  top: 2.5rem;
+  left: 1.5rem;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio a is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+@media (max-width: 480.98px) {
+  .heading-4 {
+    padding: 4rem 2rem;
+  }
+  .grid label {
+    width: 30rem;
+  }
+  .head-title4 {
+    font-size: 3rem;
+  }
+  .head-title7 {
+    font-size: 3rem;
+  }
+  .grid {
+    grid-gap: 30px;
+    grid-template-columns: 1fr;
+  }
+  .container {
+    font-size: 20px;
+  }
+}
+@media (min-width: 481px) and (max-width: 767.98px) {
+  .heading-4 {
+    padding: 4rem 1rem;
+  }
+  .grid label {
+    width: 22rem;
+  }
+  .grid {
+    grid-gap: 10px;
+    grid-template-columns: 1fr 1fr;
+  }
+  .container {
+    font-size: 15px;
+  }
+  .checkmark {
+    top: 1.6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1023.98px) {
+  .heading-4 {
+    padding: 4rem 3rem;
+  }
+  .grid label {
+    width: 35rem;
+  }
+  .grid {
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .heading-4 {
+    padding: 4rem 6rem;
+  }
+  .grid label {
+    width: 30rem;
+  }
+  .grid {
+    grid-gap: 20px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1450px) {
+  .heading-4 {
+    padding: 4rem 10rem;
+  }
+  .grid label {
+    width: 35rem;
+  }
+  .grid {
+    grid-gap: 20px;
+  }
+}
