@@ -16,6 +16,9 @@
   display: flex;
   margin-top: 2.5rem;
 }
+.flexg {
+  display: flex;
+}
 .first {
   width: 80%;
   height: 1.5rem;
@@ -34,7 +37,7 @@
   margin-top: 3rem;
 }
 a {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 span {
   font-size: 2rem;
@@ -61,6 +64,7 @@ input {
   cursor: pointer;
   color: #8e44ad;
 }
+
 .grid {
   grid-gap: 50px;
   display: grid;
@@ -100,7 +104,7 @@ input {
 
 /* On mouse-over, add a grey background color */
 .container:hover input ~ .checkmark {
-  background-color: #ccc;
+  background-color: #2196f3;
 }
 
 /* When the radio a is checked, add a blue background */
@@ -135,7 +139,7 @@ input {
     padding: 4rem 2rem;
   }
   .grid label {
-    width: 30rem;
+    width: auto;
   }
   .head-title4 {
     font-size: 3rem;
@@ -156,7 +160,7 @@ input {
     padding: 4rem 1rem;
   }
   .grid label {
-    width: 22rem;
+    width: auto;
   }
   .grid {
     grid-gap: 10px;
@@ -174,7 +178,7 @@ input {
     padding: 4rem 3rem;
   }
   .grid label {
-    width: 35rem;
+    width: auto;
   }
   .grid {
     grid-gap: 20px;
@@ -203,3 +207,5 @@ input {
     grid-gap: 20px;
   }
 }
+
+

@@ -87,7 +87,7 @@ p {
 .btn {
   /* height: 6.4rem; */
   width: fit-content;
-  padding: 2rem 3.6rem;
+  padding: 2rem 3rem;
   color: #ffffff;
   background: #8e44ad;
   font-family: "Work Sans", sans-serif;
@@ -168,6 +168,14 @@ a {
 }
 
 @media (max-width: 480.98px) {
+  .vop2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
   .mb {
     display: block;
   }
@@ -200,6 +208,14 @@ a {
   }
 }
 @media (min-width: 481px) and (max-width: 767.98px) {
+  .vop2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .btn {
+    width: 100%;
+  }
   .mb {
     display: block;
   }

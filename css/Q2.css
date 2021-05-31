@@ -8,6 +8,9 @@
   display: flex;
   margin-top: 2.5rem;
 }
+.flexg {
+  display: flex;
+}
 .first {
   width: 60%;
   height: 1.5rem;
@@ -26,7 +29,7 @@
   margin-top: 3rem;
 }
 a {
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
 }
 span {
   font-size: 2rem;
@@ -68,15 +71,22 @@ input {
   }
   .head-title {
     text-align: center;
-}
+  }
+  .head-title5 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 @media (min-width: 481px) and (max-width: 767.98px) {
+  .head-title5 {
+    text-align: center;
+  }
   .heading-5 {
     padding: 4rem 4rem;
   }
   .head-title {
     text-align: center;
-}
+  }
 }
 @media (min-width: 768px) and (max-width: 1023.98px) {
   .heading-5 {
