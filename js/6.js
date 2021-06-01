@@ -2,6 +2,6 @@
 let submitThree=document.getElementById("submitTwo")
 submitThree.addEventListener("click",()=>{
     let questionThree=document.getElementById("questionTwo").value
-    localStorage.setItem("fifthAnswer",JSON.stringify(questionThree))
+    localStorage.setItem("adSpend",JSON.stringify(questionThree))
 
 })

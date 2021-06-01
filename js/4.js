@@ -7,11 +7,11 @@
 //         }
 //     }
 // alert(selectedValue);
-let firstAnswer=JSON.parse(localStorage.getItem("firstAnswer"))
-let secondAnswer=JSON.parse(localStorage.getItem("secondAnswer"))
-let thirdAnswer=JSON.parse(localStorage.getItem("thirdAnswer"))
-let fourthAnswer=JSON.parse(localStorage.getItem("fourthAnswer"))
-let fifthAnswer=JSON.parse(localStorage.getItem("fifthAnswer"))
+let noOfOrder=JSON.parse(localStorage.getItem("noOfOrder"))
+let avgOfOrder=JSON.parse(localStorage.getItem("avgOfOrder"))
+let visitors=JSON.parse(localStorage.getItem("visitors"))
+let productCost=JSON.parse(localStorage.getItem("productCost"))
+let adSpend=JSON.parse(localStorage.getItem("adSpend"))
 
 let radioanswer=JSON.parse(localStorage.getItem("product"))
 
@@ -30,7 +30,12 @@ let pick1=document.querySelector(".i2")
 let pick2=document.querySelector(".i3")
 let pick3=document.querySelector(".i4")
 let price=document.querySelector(".price")
+
+let new5=document.querySelector(".new")
+
 price.innerHTML=`$ ${final}`
+new5.innerHTML=`${visitors}`
+
 
 
 pick.addEventListener("mouseenter",()=>{
@@ -63,6 +68,11 @@ let rest=document.querySelector(".rest")
 let rest2=document.querySelector(".subtitute")
 rest2.classList.add("hide")
 rest.classList.add("hide")
+console.log(((Number(avgOfOrder)-Number(productCost)*Number(noOfOrder))/(Number(adSpend))))
+
+let calcResult=((Number(avgOfOrder)-Number(productCost)*Number(noOfOrder))/(Number(adSpend)))
+let result=document.querySelector(".realtor")
+result.innerHTML=`$ ${calcResult.toFixed(2)}`
 
 adjust.addEventListener("click",()=>{
     adjust.classList.add("hide")
@@ -75,16 +85,17 @@ rest.addEventListener("click",()=>{
     if(rest2.value !=""){
         let final2=rest2.value
         price.innerHTML=`$ ${final2}`
+        let calResult=(Number(avgOfOrder)-Number(productCost)*Number(noOfOrder)/Number(final2 ))
+       result.innerHTML=`$ ${calResult.toFixed(2)}`
     }
     adjust.classList.remove("hide")
     rest.classList.add("hide")
     price.classList.remove("hide")
     rest2.classList.add("hide")
+    
 
 })
 
-// (Number(firstAnswer)*Number(secondAnswer)*Number(thirdAnswer))
-let calcResult=(Number(secondAnswer)-Number(fourthAnswer)*Number(firstAnswer)/Number(fifthAnswer))
-let result=document.querySelector(".realtor")
-result.innerHTML=`$ ${calcResult.toFixed(2)}`
+// (Number(noOfOrder)*Number(avgOfOrder)*Number(visitors))
+
  
