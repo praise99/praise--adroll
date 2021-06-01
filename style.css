@@ -186,7 +186,7 @@ a {
     width: 98%;
   }
   .head-title2 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .heading-2 {
     padding: 4rem 2rem;
@@ -198,6 +198,9 @@ a {
     padding: 4rem 2rem;
   }
   .head-title {
+    font-size: 2rem;
+  }
+  .head-desc {
     font-size: 1.5rem;
   }
   .column {
@@ -232,7 +235,7 @@ a {
     width: 92%;
   }
   .head-title2 {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .heading-2 {
     padding: 4rem 4rem;
@@ -241,7 +244,7 @@ a {
     padding: 4rem 4rem;
   }
   .head-title {
-    font-size: 2rem;
+    font-size: 2.5rem;
   }
   .column {
     flex-direction: column;
@@ -255,7 +258,7 @@ a {
     width: 80%;
   }
   .head-title2 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .heading-2 {
     padding: 9rem 4rem;
