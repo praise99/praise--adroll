@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../css/Q3.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <div class="heading">
@@ -31,7 +32,9 @@
             </div>
             <div class="flex">
                 <h1 class="head-title center">What is the amount spent on Ads?</h1>
-                <input autofocus class="box" type="number" id="questionTwo"></input>
+                <input autofocus class="box" data-aos="zoom-out-up" 
+                data-aos-easing="ease-in-back"
+                data-aos-delay="300" type="number" id="questionTwo"></input>
             </div>
             
             <div class="btn-top">
@@ -52,5 +55,15 @@
         </div>
         
         <script src="../js/6.js"></script>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
+
     </body>
 </html>

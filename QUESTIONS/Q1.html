@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="../style.css">
         <link rel="stylesheet" href="../css/Q1.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     </head>
     <body>
@@ -33,58 +34,87 @@
             <div>
                 <h1 class="head-title7 center">What is your industry?</h1>
                 <div class="grid">
-                    <label class="container">Arts, Entertainment & Education
+                    <label class="container"
+                    data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="100">Arts, Entertainment & Education
                         <input type="radio"  name="radio" class="radio1"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container flex">Automotive & Sports
+                    <label class="container flex" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="200">Automotive & Sports
                         <input type="radio"  name="radio" class="radio2" ></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Business & Careers
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="300">Business & Careers
                         <input type="radio"  name="radio" class="radio3"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Family, Parenting & Society
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="400">Family, Parenting & Society
                         <input type="radio"  name="radio" class="radio4"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Health, Fitness & Food
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="500">Health, Fitness & Food
                         <input type="radio"  name="radio" class="radio5"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Home/Garden, Pets & Hobbies
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="600">Home/Garden, Pets & Hobbies
                         <input type="radio"  name="radio" class="radio6"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">News, Politics & Law
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="700">News, Politics & Law
                         <input type="radio"  name="radio" class="radio7"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Personal Finance
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="800">Personal Finance
                         <input type="radio"  name="radio" class="radio8"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Real Estate
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="900">Real Estate
                         <input type="radio"  name="radio" class="radio9"></input>
                         <span class="checkmark"></span>
-                    </label><label class="container">Retail
+                    </label><label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="1000">Retail
                         <input type="radio"  name="radio" class="radio10"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Style & Fashion
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="1100">Style & Fashion
                         <input type="radio"  name="radio" class="radio11"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Technology & Computing
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="1200">Technology & Computing
                         <input type="radio"  name="radio" class="radio12"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Travel
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="300">Travel
                         <input type="radio"  name="radio" class="radio13"></input>
                         <span class="checkmark"></span>
                     </label>
-                    <label class="container">Other
+                    <label class="container" data-aos="zoom-in-down"
+                    data-aos-easing="ease-in-back"
+                data-aos-delay="1400">Other
                         <input type="radio"  name="radio" class="radio14"></input>
                         <span class="checkmark"></span>
                     </label>
@@ -107,5 +137,14 @@
         </div>
         
         <script src="../js/radio.js"></script>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     </body>
 </html>

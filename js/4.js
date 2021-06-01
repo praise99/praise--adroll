@@ -68,7 +68,6 @@ let rest=document.querySelector(".rest")
 let rest2=document.querySelector(".subtitute")
 rest2.classList.add("hide")
 rest.classList.add("hide")
-console.log(((Number(avgOfOrder)-Number(productCost)*Number(noOfOrder))/(Number(adSpend))))
 
 let calcResult=((Number(avgOfOrder)-Number(productCost)*Number(noOfOrder))/(Number(adSpend)))
 let result=document.querySelector(".realtor")
