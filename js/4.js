@@ -1,12 +1,4 @@
-// const rbs = document.querySelectorAll('input[name="radio"]');
-//     let selectedValue;
-//     for (const rb of rbs) {
-//         if (rb.checked) {
-//             selectedValue = rb.value;
-//             break;
-//         }
-//     }
-// alert(selectedValue);
+
 let noOfOrder=JSON.parse(localStorage.getItem("noOfOrder"))
 let avgOfOrder=JSON.parse(localStorage.getItem("avgOfOrder"))
 let visitors=JSON.parse(localStorage.getItem("visitors"))
@@ -71,7 +63,13 @@ rest.classList.add("hide")
 
 let calcResult=((Number(avgOfOrder)-Number(productCost)*Number(noOfOrder))/(Number(adSpend)))
 let result=document.querySelector(".realtor")
-result.innerHTML=`$ ${calcResult.toFixed(2)}`
+
+if(isNaN(calcResult)){
+    result.innerHTML=`$ 0`
+}
+else{
+    result.innerHTML=`$ ${calcResult.toFixed(2)}`
+}
 
 adjust.addEventListener("click",()=>{
     adjust.classList.add("hide")

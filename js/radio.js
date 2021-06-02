@@ -2,6 +2,7 @@ const product = () => {
   const btn = document.querySelector("#btn");
   // handle click button
   btn.onclick = function () {
+
     // const rbs = document.querySelectorAll('input[name="radio"]');
     const radio1 = document.querySelector(".radio1");
     const radio2 = document.querySelector(".radio2");
@@ -53,3 +54,14 @@ const product = () => {
 };
 product();
 
+//  const rbs = document.querySelectorAll('input[name="radio"]');
+//   for (const rb of rbs) {
+//       if (rb.checked) { 
+//         console.log("push")
+//         // btn.href="./Q2.html" 
+//         btn.setAttribute("onclick","location.href='./Q2.html'")                    
+//       }else{
+//         console.log("push3333")
+//         btn.setAttribute("onclick","location.href='#'")                     
+//       }
+//   }
