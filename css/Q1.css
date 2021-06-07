@@ -1,7 +1,7 @@
 .heading-4 {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   padding: 4rem 15rem;
-  color: #000000;
+  color: #767f75;
 }
 .center {
   text-align: center;
@@ -24,12 +24,15 @@
   height: 1.5rem;
   background-color: #e5e9f2;
   border-radius: 0rem 1rem 1rem 0rem;
+  border: 5px solid #e5e9f2;
+  margin-left: -1rem;
 }
 .second {
   width: 15%;
   height: 1.5rem;
-  background-color: rgb(0, 174, 239);
+  background-color: #93c13d;
   border-radius: 1rem;
+  border: 5px solid #93c13d;
 }
 .shoot {
   background-color: transparent;
@@ -207,5 +210,3 @@ input {
     grid-gap: 20px;
   }
 }
-
-
